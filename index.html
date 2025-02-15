@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Pagina Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" id="open-menu" class="header__checkbox">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img src="images/TypeScript.png" alt="" class="header__logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#">Home</a></li>
+                <li class="header__nav-item"><a href="#profile">About</a></li>
+                <li class="header__nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="header__nav-item"><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile" id="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img src="images/Perfil.jpg" alt="Perfil" class="profile__img">
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__description">
+                        <h1>¿Quien es Raul Duran?</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, voluptatibus explicabo harum amet doloribus illum obcaecati officia animi esse alias, dicta rerum aliquid hic doloremque repellat. Saepe ad aperiam consequuntur?</p>
+                    </div>
+                    <div class="profile__skills-container">
+                        <h2>SKILLS</h2>
+                        <ul>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--80">80%</div>
+                                </div>
+                                <span class="profile__skill-name">HTML</span>
+                            </li>
+
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--60">60%</div>
+                                </div>
+                                <span class="profile__skill-name">CSS</span>
+                            </li>
+
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--50">50%</div>
+                                </div>
+                                <span class="profile__skill-name">Javascript</span>
+                            </li>
+
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--70">70%</div>
+                                </div>
+                                <span class="profile__skill-name">Java</span>
+                            </li>
+
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--80">80%</div>
+                                </div>
+                                <span class="profile__skill-name">SQL</span>
+                            </li>
+
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--80">80%</div>
+                                </div>
+                                <span class="profile__skill-name">Git</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">Portfolio Section</h2>
+        <div class="portfolio__project-container">
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Sistema de Agendamiento de Citas</h2>
+            </div> 
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Sistema de Pedidos y Facturacion</h2>
+            </div> 
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Programa de Desafios Medioambientales</h2>
+            </div> 
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Sistema de Reservacion de habitaciones</h2>
+            </div> 
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Proyectos Web Futuros Tomas IA</h2>
+            </div> 
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Proyectos Web Futuros Tomas Cyborg<h2>
+            </div> 
+        </div>
+    </section>
+    <section class="form" id="contact">
+        <h2 class="form__title">Contact</h2>
+        <form class="form__form">
+            <div class="form__input-container">
+                <label>Nombre
+                    <input type="text" placeholder="Raul Alejandro">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Apellido
+                    <input type="text" placeholder="Duran Enriquez">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Mail
+                    <input type="email" placeholder="ejemplo@gmail.com">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Mensaje
+                    <textarea placeholder="Escribe tu mensaje"></textarea>
+                </label>
+            </div>
+            <div class="form__input-container">
+                <input type="submit">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <strong>NosakaKing</strong> - Copyright
+    </footer>
+</body>
+</html>
